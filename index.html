@@ -1,108 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta property="og:title" content="MikeHawkSoft - The Best Operating Systems for your computer.">
-    <meta property="og:description" content="Check out MikeHawkSoft.">
-    <meta property="og:image" content="https://media.discordapp.net/attachments/1137348276895625297/1285952344273588366/windtranMHS.png?ex=66ec23f2&is=66ead272&hm=cd783bb6d15b906fc5c71ac77227b02597d5528be68f07baf674a33978732fe6&=&format=webp&quality=lossless&width=535&height=535">
-    <meta property="og:url" content="https://mikehawksoft.github.io">
-    <meta property="og:type" content="website">
-    <meta content="#FF0000" data-react-helmet="true" name="theme-color" />
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="mikehawksoft.png" type="image/png">
-    <title>MikeHawkSoft</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #ffffff;
-            color: #333333;
-        }
-        header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 20px 40px;
-            background-color: #ffffff;
-            border-bottom: 1px solid #eaeaea;
-        }
-        .logo {
-            height: 40px;
-        }
-        nav {
-            display: flex;
-            align-items: center;
-        }
-        nav a {
-            color: #0078d4;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        .content {
-            padding: 40px;
-            max-width: 800px;
-            margin: auto;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .screenshots {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 20px;
-        }
-        .screenshot {
-            flex: 1;
-            margin: 0 10px;
-        }
-        .screenshot img {
-            width: 100%;
-            border-radius: 8px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #f3f3f3;
-            border-top: 1px solid #eaeaea;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MikeHawkSoft</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Tahoma&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --xp-blue:#0a246a;
+    --xp-blue-mid:#1f5ba8;
+    --xp-blue-lt:#3d96f0;
+    --xp-silver:#ece9d8;
+    --xp-silver-dk:#d4d0c8;
+}
+
+body {
+    font-family: Tahoma, sans-serif;
+    font-size:12px;
+    background:#0a246a;
+    color:#000;
+    margin:0;
+    padding-bottom:44px;
+}
+
+.taskbar {
+    position:fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    height:40px;
+    background:linear-gradient(#1f5ba8,#0a246a);
+    display:flex;
+    align-items:center;
+    padding:4px;
+    color:#fff;
+}
+.start-btn {
+    background:#2e7b00;
+    padding:6px 14px;
+    border-radius:10px;
+    font-weight:bold;
+}
+.tb-item {
+    margin-left:6px;
+    padding:4px 10px;
+    background:rgba(255,255,255,0.1);
+}
+.tb-clock {
+    margin-left:auto;
+}
+
+.window {
+    margin:14px;
+    background:var(--xp-silver);
+    border:1px solid #0a246a;
+    box-shadow:3px 3px 10px rgba(0,0,0,0.4);
+}
+.titlebar {
+    background:linear-gradient(#3d96f0,#1f5ba8);
+    color:#fff;
+    padding:5px;
+    font-weight:bold;
+}
+
+.hero {
+    display:grid;
+    grid-template-columns:55% 45%;
+}
+.hero-left {
+    background:linear-gradient(135deg,#0e4a96,#38a0f0);
+    color:#fff;
+    padding:25px;
+}
+.hero-left h1 {
+    font-size:22px;
+}
+.hero-right {
+    padding:15px;
+}
+
+.xp-btn {
+    display:inline-block;
+    padding:6px 14px;
+    background:linear-gradient(#5ecc1e,#2a7a00);
+    border-radius:12px;
+    color:#fff;
+    margin-top:10px;
+}
+
+.news {
+    padding:14px;
+}
+.news-item {
+    margin-bottom:10px;
+}
+
+.footer {
+    padding:10px;
+    background:var(--xp-silver);
+}
+</style>
 </head>
+
 <body>
 
-<header>
-    <img src="https://media.discordapp.net/attachments/1137348276895625297/1285954457196040275/MIKEHAWKSOFFF.png?ex=66ec25ea&is=66ead46a&hm=c68c68e4e223e96c4e1473b856c725cf87b2c48964a7f1eff0d2eed641c36486&=&format=webp&quality=lossless&width=231&height=49" alt="Logo" class="logo">
-    <nav>
-        <a href="#">Home</a>
-        <a href="/products.html">Products</a>
-    </nav>
-</header>
+<div class="window">
+<div class="titlebar">🪟 MikeHawkSoft — Wimboes</div>
 
-<div class="content">
-    <h1>Welcome to MikeHawkSoft</h1>
-    <p>Here, we have the best operating systems that you can get for your computer. Our OS solutions are designed to be user-friendly, secure, and powerful, providing you with an exceptional computing experience.</p>
-    <p>Explore our range of products and see what fits your needs!</p>
-    
-    <div class="screenshots">
-        <div class="screenshot">
-            <img src="https://media.discordapp.net/attachments/1137348276895625297/1285958993872814151/Un323itled-3.png?ex=66ec2a24&is=66ead8a4&hm=fa6c10bf16468f7b8a120ab1839e1fb380e690e935cabd46eb161d82ffa3fcbe&=&format=webp&quality=lossless&width=267&height=160" alt="OS Screenshot 1">
-        </div>
-        <div class="screenshot">
-            <img src="https://media.discordapp.net/attachments/1137348276895625297/1285958994409558037/Untitled123123-3.png?ex=66ec2a24&is=66ead8a4&hm=c4ae1f63bb3974d9876c154a32d264dcb4989dfcc8745a697665e57ad5843d5f&=&format=webp&quality=lossless&width=267&height=160" alt="OS Screenshot 2">
-        </div>
-        <div class="screenshot">
-            <img src="https://media.discordapp.net/attachments/1137348276895625297/1285958994682183702/46536236454264236.png?ex=66ec2a24&is=66ead8a4&hm=7d863f97cf06195170f8137cc32c6808a1008f56ea04fa4e9380d5dab4a32ec6&=&format=webp&quality=lossless&width=267&height=160" alt="OS Screenshot 3">
-        </div>
-    </div>
+<div class="hero">
+<div class="hero-left">
+<h1>Wimboes 1.0</h1>
+<p><b>Work in progress.</b></p>
+<p>
+A small experimental OS project.
+</p>
+<div class="xp-btn">🚧 In Development</div>
 </div>
 
-<footer>
-    <p>MIKEHAWKSOFT IS ONLY AN PARODY!!!</p>
-</footer>
+<div class="hero-right">
+<h3>Current Build</h3>
+<p><b>Wimboes 1.0</b></p>
+<p>Unreleased · actively being worked on</p>
+</div>
+</div>
+</div>
+
+<div class="window">
+<div class="titlebar">📰 Latest</div>
+
+<div class="news">
+<div class="news-item">
+<b>Started Wimboes 1.0</b><br>
+Basic UI and layout experiments are underway.
+</div>
+
+<div class="news-item">
+<b>System groundwork</b><br>
+Core pieces are being tested before anything public.
+</div>
+</div>
+</div>
+
+<div class="window">
+<div class="titlebar">⚙️ System Requirements</div>
+
+<div style="padding:12px;">
+<b>CPU:</b> Anything vaguely modern<br>
+<b>RAM:</b> 128 MB minimum<br>
+<b>Storage:</b> ~500 MB<br>
+<b>Status:</b> Not installable yet
+</div>
+</div>
+
+<div class="window">
+<div class="titlebar">© 2026 MikeHawkSoft</div>
+<div class="footer">
+⚠️ PARODY — Not affiliated with Microsoft
+</div>
+</div>
+
+<div class="taskbar">
+<div class="start-btn">🪟 start</div>
+<div class="tb-item">🪟 Wimboes 1.0</div>
+<div class="tb-clock" id="clock"></div>
+</div>
+
+<script>
+function tick(){
+    const d=new Date();
+    let h=d.getHours(),m=d.getMinutes();
+    const ap=h>=12?'PM':'AM';
+    h=h%12||12;
+    document.getElementById('clock').textContent=
+        h+':'+String(m).padStart(2,'0')+' '+ap;
+}
+tick();setInterval(tick,10000);
+</script>
 
 </body>
 </html>
